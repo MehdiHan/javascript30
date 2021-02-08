@@ -1,8 +1,14 @@
+![JS30](../javascript30.png)
+
 # 01 - JavaScript Drum Kit
 
-## Goals
+## Goal
 
-→ Build a JavaScript Drum Kit.
-→ Set up HTML5 structure.
-→ Add some CSS styles.
-→ Add sounds folder.
+Build a Vanilla JavaScript Drum Kit
+
+## Use
+
+- HTML5
+- CSS3
+- VANILLA JAVASCRIPT
+- GOOGLE FONTS
