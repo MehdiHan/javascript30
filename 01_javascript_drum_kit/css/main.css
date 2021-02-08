@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  font-family: 'Teko', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+  background-color: #303234;
+}
+h1 {
+  font-size: 3rem;
+}
+kbd {
+  font-size: 2rem;
+  font-family: 'Teko', sans-serif;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 10px;
+}
+.key {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #1d1f20;
+  transition: box-shadow 200ms;
+}
+.playing {
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.3),
+    inset -4px -4px 4px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 200ms;
+}
+.playing kbd {
+  color: #ee6c4d;
+}
