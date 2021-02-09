@@ -8,7 +8,10 @@ Build a Vanilla JavaScript Drum Kit
 
 ## Use
 
+Grab your keyboard and press the Drum Kit keys.
+
+## Stack
+
 - HTML5
 - CSS3
 - VANILLA JAVASCRIPT
-- GOOGLE FONTS
