@@ -4,7 +4,7 @@
 
 ## Goal
 
-Build a Vanilla JavaScript Analag Clock.
+Build a Vanilla JavaScript Analog Clock.
 
 ## Stack
 
