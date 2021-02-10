@@ -40,6 +40,8 @@ h1 {
   width: 5px;
   background-color: #f8f5f5;
   transform-origin: bottom;
+  transition: all 500ms;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 .hour__hand {
   z-index: 1;
