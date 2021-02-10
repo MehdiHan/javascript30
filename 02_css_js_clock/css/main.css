@@ -53,6 +53,9 @@ h1 {
 .second__hand {
   left: calc(50% - 1px);
   width: 2px;
-  background-color: rebeccapurple;
   transform: rotate(6deg);
+}
+.timer {
+  font-size: 40px;
+  margin-top: 40px;
 }
