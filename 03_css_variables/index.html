@@ -15,7 +15,34 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Playing with CSS variables and JavaScript</h1>
+    <main>
+      <h1>Playing with CSS variables and JavaScript</h1>
+      <div class="controls">
+        <label for="spacing">spacing</label>
+        <input
+          type="range"
+          name="spacing"
+          min="10"
+          max="200"
+          value="10"
+          data-sizing="px"
+        />
+        <label for="blur">blur</label>
+        <input
+          type="range"
+          name="blur"
+          min="0"
+          max="25"
+          value="10"
+          data-sizing="px"
+        />
+        <label for="base"></label>
+        <input type="color" name="base" value="#ffc600" />
+      </div>
+      <div class="media">
+        <img src="https://picsum.photos/525" alt="random picture" />
+      </div>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
