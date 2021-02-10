@@ -1,3 +1,9 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+  --backgroundColor: ;
+}
 *,
 *::after,
 *::before {
@@ -9,7 +15,7 @@ body {
   font-size: 100%;
   font-family: 'Teko', sans-serif;
   color: whitesmoke;
-  background-color: lightslategray;
+  background-color: #4b535a;
 }
 main {
   display: flex;
@@ -26,4 +32,13 @@ h1 {
   justify-content: space-around;
   min-width: 525px;
   padding-bottom: 1rem;
+}
+.media img {
+  padding: var(--spacing);
+  background-color: var(--base);
+  filter: blur(var(--blur));
+}
+
+.title {
+  color: var(--base);
 }
