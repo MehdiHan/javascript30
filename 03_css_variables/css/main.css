@@ -1,8 +1,7 @@
 :root {
   --base: #ffc600;
-  --spacing: 10px;
-  --blur: 10px;
-  --backgroundColor: ;
+  --grayscale: 0%;
+  --blur: 0px;
 }
 *,
 *::after,
@@ -30,15 +29,38 @@ h1 {
 .controls {
   display: flex;
   justify-content: space-around;
-  min-width: 525px;
+  min-width: 600px;
   padding-bottom: 1rem;
 }
 .media img {
-  padding: var(--spacing);
-  background-color: var(--base);
-  filter: blur(var(--blur));
+  border: 5px solid var(--base);
+  filter: grayscale(var(--grayscale)) blur(var(--blur));
 }
-
 .title {
   color: var(--base);
+}
+.controls__grayscale,
+.controls__blur,
+.controls__bascolor {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+label {
+  padding-right: 1rem;
+}
+input[type='range'] {
+  -webkit-appearance: none;
+  outline: none;
+  height: 2px;
+  max-width: 100px;
+  box-sizing: border-box; /* même modèle de boîte pour tous */
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+input[type='color'] {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
 }

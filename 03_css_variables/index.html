@@ -20,29 +20,35 @@
         Playing with CSS variables and <span class="title">JavaScript</span>
       </h1>
       <div class="controls">
-        <label for="spacing">spacing</label>
-        <input
-          type="range"
-          name="spacing"
-          min="10"
-          max="200"
-          value="10"
-          data-sizing="px"
-        />
-        <label for="blur">blur</label>
-        <input
-          type="range"
-          name="blur"
-          min="0"
-          max="25"
-          value="10"
-          data-sizing="px"
-        />
-        <label for="base"></label>
-        <input type="color" name="base" value="#ffc600" />
+        <div class="controls__grayscale">
+          <label for="grayscale">grayscale</label>
+          <input
+            type="range"
+            name="grayscale"
+            min="0"
+            max="100"
+            value="0"
+            data-sizing="%"
+          />
+        </div>
+        <div class="controls__blur">
+          <label for="blur">blur</label>
+          <input
+            type="range"
+            name="blur"
+            min="0"
+            max="25"
+            value="0"
+            data-sizing="px"
+          />
+        </div>
+        <div class="controls__basecolor">
+          <label for="base">base color</label>
+          <input type="color" name="base" value="#ffc600" />
+        </div>
       </div>
       <div class="media">
-        <img src="https://picsum.photos/525" alt="random picture" />
+        <img src="https://picsum.photos/600" alt="random picture" />
       </div>
     </main>
     <script src="js/main.js"></script>
