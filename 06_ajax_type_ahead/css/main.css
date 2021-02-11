@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+body {
+  font-size: 100%;
+  font-family: 'Teko', sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fffded;
+  background-color: #121212;
+}
+input {
+  cursor: pointer;
+  outline: none;
+}
+.search {
+  width: 21.875rem;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+}
+.search::placeholder {
+  font-family: 'Teko', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+.suggestions {
+  height: 240px;
+  overflow: hidden;
+}
+.suggestions li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5105a;
+  height: 40px;
+  padding: 10px;
+}
+.hl {
+  background-color: #e5105a;
+}
