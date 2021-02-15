@@ -17,9 +17,34 @@
   <body>
     <main>
       <h1>Custom HTML5 Video Player</h1>
-      <video width="640" height="360" controls>
-        <source src="src/movie.mp4" type="video/mp4" />
-      </video>
+      <div class="player">
+        <video id="moviePlayer" width="640" height="360">
+          <source src="src/movie.mp4" type="video/mp4" />
+        </video>
+        <div class="player__controls">
+          <div class="player__progress">
+            <div class="player__progress--timeline"></div>
+          </div>
+          <div class="player__buttons">
+            <button
+              class="player__button--playpause"
+              title="Play/Pause"
+            ></button>
+            <span class="player__button--volume"></span>
+            <input
+              type="range"
+              name="volume"
+              class="player__slider"
+              min="0"
+              max="1"
+              step="0.05"
+              value="1"
+            />
+            <button data-skip="-20" class="player__button--skip"><< 20s</button>
+            <button data-skip="20" class="player__button--skip">20s >></button>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="js/main.js"></script>
   </body>
