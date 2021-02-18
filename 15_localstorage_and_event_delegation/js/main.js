@@ -45,6 +45,7 @@ const createItem = (item, key) => {
 itemsSubmit.addEventListener('submit', (event) => {
   event.preventDefault();
   addItems(itemName.value);
+  itemName.value = '';
 });
 
 window.addEventListener('load', getItems);
