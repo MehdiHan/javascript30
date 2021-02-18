@@ -1,7 +1,6 @@
 const sequenceKeys = [];
-const secretKey = 'emilie';
+const secretKey = 'émilie';
 const unicorn = document.querySelector('div');
-console.dir(unicorn);
 window.addEventListener('keyup', (event) => {
   sequenceKeys.push(event.key);
   sequenceKeys.splice(

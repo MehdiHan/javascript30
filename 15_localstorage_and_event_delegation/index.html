@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Storage and Event Delegation</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preload" href="css/main.css" as="style" />
     <link rel="preload" href="js/main.js" as="script" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap"
       rel="stylesheet"
@@ -16,14 +21,16 @@
   </head>
   <body>
     <main>
-      <form class="list">
+      <div class="container">
         <h2>Local Tacos 🌮</h2>
-        <ul class="list__items"></ul>
-        <div class="list__inputs">
+        <ul class="items__list">
+          <li>Loading some tacos ...</li>
+        </ul>
+        <form class="items__add">
           <input type="text" name="item" placeholder="Item Name" required />
           <input type="submit" value="+ Add Item" />
-        </div>
-      </form>
+        </form>
+      </div>
     </main>
     <script src="js/main.js"></script>
   </body>
