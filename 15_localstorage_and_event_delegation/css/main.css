@@ -54,15 +54,12 @@ button {
 .items__list li {
   display: flex;
   align-items: center;
-}
-.items__list li:not(:first-child) {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: 'Varela Round', sans-serif;
   padding-top: 0.5rem;
 }
-
 [type='text'],
 [type='submit'] {
   min-height: 2rem;
