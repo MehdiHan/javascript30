@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  transform-origin: center;
+  color: #121212;
+  font-size: 100%;
+  font-family: 'Teko', sans-serif;
+}
+main {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 2rem;
+}
+h1 {
+  text-shadow: -8px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.color {
+  display: block;
+  color: rgb(228, 33, 114);
+}

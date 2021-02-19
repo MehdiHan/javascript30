@@ -8,7 +8,7 @@ Build a dynamic text shadow mouse move effect in Vanilla Javascript.
 
 ## Use
 
-Move your mouse around the h1 element and see what happens.
+Move your mouse everywhere in the window and see what happens.
 
 ## Stack
 
