@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #333333;
+  font-size: 100%;
+  font-family: 'Teko', sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.videos {
+  margin: 2.5rem 0;
+}
+.videos li {
+  display: flex;
+}
+.videos__title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 420px;
+  height: 100px;
+  margin-left: 0.5rem;
+  background-color: #fafafa;
+}
+.videos__title h2 {
+  font-style: italic;
+}
+.videos li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
