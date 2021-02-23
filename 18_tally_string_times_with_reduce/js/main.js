@@ -20,13 +20,11 @@ const displayItems = (items) => {
 
 const calculateTotalDuration = (items) => {
   const timeCode = [];
-
   items.forEach((item) => {
     let duration = item.dataset.time;
     let cursor = duration.search(':');
     let minutes = Number(duration.substr(0, cursor));
     let seconds = Number(duration.substr(cursor + 1, duration.length));
-
     timeCode.push(minutes * 60 + seconds);
   });
 
@@ -35,7 +33,7 @@ const calculateTotalDuration = (items) => {
   }, 0);
 
   let secondsLeft = totalSeconds;
-
+  console.log(secondsLeft);
   const hours = Math.floor(secondsLeft / 3600);
   secondsLeft = secondsLeft % 3600;
 
