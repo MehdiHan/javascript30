@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+  font-family: 'Teko', sans-serif;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+textarea,
+select,
+button {
+  border: none;
+  outline: none;
+}
+textarea {
+  font-style: italic;
+  outline: none;
+  margin: 1.5rem 0;
+  padding: 0.25rem;
+  background-color: #f0f0f0;
+}
+button {
+  cursor: pointer;
+}
+select {
+  appearance: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f0f0f0;
+}
+select:focus {
+  background-color: #e0e0e0;
+}
+input {
+  width: 200px;
+}
+.voiceinator {
+  display: flex;
+  flex-direction: column;
+}
+.voiceinator {
+  width: 360px;
+}
+.voiceinator__header {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #d90429;
+}
+.voiceinator__form {
+  display: flex;
+  flex-direction: column;
+}
+.rate,
+.pitch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.voiceinator__form--controls {
+  display: flex;
+  justify-content: space-between;
+}
+.fas {
+  margin-right: 0.75rem;
+}
+.fa-caret-down {
+  color: tomato;
+}
+.button {
+  color: #ffffff;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  width: 48%;
+  padding: 0.5rem 1.25rem;
+  background-color: #d90429;
+}
+.button:hover {
+  background-color: #b40421;
+  transition: background-color linear 400ms;
+}
