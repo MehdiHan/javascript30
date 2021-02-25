@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech Synthesis</title>
+    <link rel="preload" href="css/main.css" as="style" />
+    <link rel="preload" href="js/main.js" as="script" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Speech Synthesis</h1>
+      <div class="voiceinator">
+        <div class="voiceinator__header">
+          <h2>Voiceinator 5000</h2>
+        </div>
+        <div class="voiceinator__form">
+          <select name="voice" id="voices">
+            <option value="">Select a voice</option>
+          </select>
+          <label for="rate">Rate setting: </label>
+          <input
+            type="range"
+            name="rate"
+            min="0"
+            max="3"
+            value="1"
+            step="0.1"
+          />
+          <label for="pitch">Pitch setting: </label>
+          <input type="range" name="pitch" min="0" max="2" step="0.1" />
+          <textarea name="text" cols="30" rows="10"></textarea>
+          <div class="voiceinator__form--controls">
+            <button id="stop"><i class="fas fa-stop"></i>Stop</button>
+            <button id="speak"><i class="fas fa-microphone"></i>Speak</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
