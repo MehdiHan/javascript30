@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+div {
+  width: 100%;
+  padding: 100px;
+}
+
+.one {
+  background-color: #ff99a3;
+}
+.two {
+  background-color: #ffb8c2;
+}
+.three {
+  background-color: #ffebed;
+}
