@@ -45,6 +45,10 @@ svg {
   align-items: center;
 }
 .navbar__links > * {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-right: 2.75rem;
 }
 .logo {
@@ -58,27 +62,48 @@ svg {
   border-radius: 100px;
   font-weight: 700;
 }
-.arrow {
-  display: none;
+.navbar__dropdown {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  opacity: 0;
+  transform-origin: 50% 0%;
+  transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 500ms;
 }
-.navbar__connect:hover .arrow {
-  display: inline-block;
-  padding-left: 0.25rem;
+.navbar__dropdown.open {
+  transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 500ms;
+  opacity: 1;
 }
 .navbar__dropdown--arrow {
   content: '';
   display: block;
   width: 0.5rem;
   height: 0.5rem;
-  background-color: #ffffff;
-  transform: rotate(45deg);
+  background-color: inherit;
+  transform: rotate(45deg) translateY(-0.25rem);
 }
 .dropdown {
-  margin-top: 1rem;
-  background: white;
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 3rem;
+  transition: all 500ms ease;
+}
+.links__enter .dropdown {
+  display: block;
+}
+.active .dropdown {
+  opacity: 1;
 }
 .products {
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   color: #2c3a57;
   padding: 1.5rem 2rem;
@@ -104,6 +129,8 @@ svg {
   color: #2c3a57;
   font-weight: 200;
 }
+.products,
+.developers,
 .company {
   min-width: 420px;
 }
