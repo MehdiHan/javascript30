@@ -16,7 +16,7 @@ main {
   justify-content: center;
   height: 100vh;
 }
-.items {
+.slider {
   height: 800px;
   padding: 100px;
   width: 100%;
@@ -35,7 +35,7 @@ main {
   perspective: 500px;
 }
 
-.items.active {
+.slider.active {
   background: rgba(255, 255, 255, 0.3);
   cursor: grabbing;
   cursor: -webkit-grabbing;
