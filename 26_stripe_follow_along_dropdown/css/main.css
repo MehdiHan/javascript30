@@ -1,0 +1,146 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #ffffff;
+  min-height: 100vh;
+  background: linear-gradient(#57ebde, #aefb2a) center center no-repeat;
+  font-size: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  outline: none;
+}
+span {
+  display: block;
+  font-size: 0.75rem;
+}
+svg {
+  margin-right: 2rem;
+}
+.topbar,
+.navbar,
+.navbar__links {
+  display: flex;
+  flex-direction: row;
+}
+.topbar {
+  justify-content: space-around;
+  padding: 2rem;
+}
+.navbar {
+  align-items: center;
+}
+.navbar__links > * {
+  padding-right: 2.75rem;
+}
+.logo {
+  font-size: 1.5rem;
+}
+.navbar__connect {
+  color: #ffffff;
+  background-color: rgba(250, 250, 250, 0.25);
+  margin-left: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  font-weight: 700;
+}
+.arrow {
+  display: none;
+}
+.navbar__connect:hover .arrow {
+  display: inline-block;
+  padding-left: 0.25rem;
+}
+.navbar__dropdown--arrow {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+.dropdown {
+  margin-top: 1rem;
+  background: white;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  color: #2c3a57;
+  padding: 1.5rem 2rem;
+}
+.products_payments,
+.products_financial,
+.products_business {
+  margin: 0 1rem;
+}
+.products_payments li,
+.products_financial li,
+.products_business li {
+  display: flex;
+  flex-direction: row;
+}
+.products_payments li {
+  padding-bottom: 1rem;
+}
+.developers,
+.company {
+  display: flex;
+  flex-direction: column;
+  color: #2c3a57;
+  font-weight: 200;
+}
+.company {
+  min-width: 420px;
+}
+.developers__doc,
+.developers__api,
+.company__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5rem 2rem;
+}
+.developers__doc {
+  font-weight: 400;
+}
+.developers__api,
+.company__blog {
+  background-color: #f6f9fc;
+  padding: 1.5rem 2rem;
+}
+.company__blog {
+  display: flex;
+  flex-direction: column;
+}
+.developers__doc,
+.developers__api,
+.company__nav,
+.company__blog li:first-child {
+  font-weight: 500;
+}
+.company__blog li:first-child {
+  padding-bottom: 0.75rem;
+}
+.tiny {
+  cursor: pointer;
+  color: #8c9eb1;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+.tiny:hover {
+  color: #2c3a57;
+}

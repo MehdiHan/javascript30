@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stripe Follow Along Dropdown</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1 class="logo">Strike.</h1>
+      <nav class="navbar">
+        <div class="navbar__dropdown">
+          <div class="navbar__dropdown--arrow"></div>
+        </div>
+        <ul class="navbar__links">
+          <li>
+            <a href="#">Products</a>
+            <div class="dropdown products">
+              <ul class="products_payments">
+                <li>
+                  <svg
+                    class="ProductIcon ProductIcon--Payments"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Payments logo</title>
+                    <path
+                      d="M34.61 11.28a2.56 2.56 0 0 0-1.22-1.04L8.54.2A2.57 2.57 0 0 0 5 2.6V15c0 1.05.64 2 1.61 2.4l6.44 2.6 21.56 8.72c.26-.4.4-.88.39-1.36V12.64c0-.48-.13-.96-.39-1.37z"
+                      fill="url(#product-icon-payments-SiteMenu-a)"
+                    ></path>
+                    <path
+                      d="M34.63 11.28L13.06 20l-6.45 2.6A2.58 2.58 0 0 0 5 25v12.42a2.58 2.58 0 0 0 3.54 2.39L33.4 29.76c.5-.21.93-.57 1.21-1.04.26-.41.4-.88.39-1.36V12.64c0-.48-.12-.95-.37-1.36z"
+                      fill="#96F"
+                    ></path>
+                    <path
+                      d="M34.62 11.28l.1.17c.18.37.28.77.28 1.19v-.03 14.75c0 .48-.13.95-.39 1.36L13.06 20l21.56-8.72z"
+                      fill="url(#product-icon-payments-SiteMenu-b)"
+                    ></path>
+                    <defs>
+                      <linearGradient
+                        id="product-icon-payments-SiteMenu-a"
+                        x1="20"
+                        y1="4.13"
+                        x2="20"
+                        y2="21.13"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#11EFE3"></stop>
+                        <stop offset="1" stop-color="#21CFE0"></stop>
+                      </linearGradient>
+                      <linearGradient
+                        id="product-icon-payments-SiteMenu-b"
+                        x1="35"
+                        y1="11.28"
+                        x2="35"
+                        y2="28.72"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#0048E5"></stop>
+                        <stop offset="1" stop-color="#9B66FF"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <a href="#">Payments<span>online payments</span></a>
+                </li>
+                <li>
+                  <svg
+                    class="ProductIcon ProductIcon--Terminal"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Terminal logo</title>
+                    <path
+                      d="M36.98 14.05l-6.31 1.36L9.33 20l-7.35 1.58A2.52 2.52 0 0 0 0 24.05v13.42C0 38.87 1.12 40 2.5 40h35c1.38 0 2.5-1.13 2.5-2.53V16.53c0-.77-.34-1.49-.93-1.97a2.48 2.48 0 0 0-2.09-.5z"
+                      fill="#9B66FF"
+                    ></path>
+                    <path
+                      d="M28.59 0H11.58A2.54 2.54 0 0 0 9 2.5v25c0 1.38 1.15 2.5 2.58 2.5h16.84A2.54 2.54 0 0 0 31 27.5v-25A2.5 2.5 0 0 0 28.59 0z"
+                      fill="url(#product-icon-terminal-SiteMenu-a)"
+                    ></path>
+                    <path
+                      d="M31 15.34V27.5c0 1.38-1.15 2.5-2.58 2.5H11.58A2.54 2.54 0 0 1 9 27.5v-7.43l.33-.07 21.34-4.59.33-.07z"
+                      fill="url(#product-icon-terminal-SiteMenu-b)"
+                    ></path>
+                    <defs>
+                      <linearGradient
+                        id="product-icon-terminal-SiteMenu-a"
+                        x1="20"
+                        y1="1.97"
+                        x2="20"
+                        y2="17.6"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#11EFE3"></stop>
+                        <stop offset=".33" stop-color="#15E8E2"></stop>
+                        <stop offset=".74" stop-color="#1FD3E0"></stop>
+                        <stop offset="1" stop-color="#21CFE0"></stop>
+                      </linearGradient>
+                      <linearGradient
+                        id="product-icon-terminal-SiteMenu-b"
+                        x1="31"
+                        y1="22.67"
+                        x2="5.34"
+                        y2="22.67"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#0048E5"></stop>
+                        <stop offset=".64" stop-color="#625AF5"></stop>
+                        <stop offset="1" stop-color="#8A62FC"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <a href="#">Terminal<span>in-person payments</span></a>
+                </li>
+                <li>
+                  <svg
+                    class="ProductIcon ProductIcon--Connect"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Connect logo</title>
+                    <path
+                      d="M12.47.01a13.01 13.01 0 0 0 .5 25.99h10.55c1.37 0 2.48-1.1 2.48-2.48V13.01a12.99 12.99 0 0 0-13.53-13z"
+                      fill="url(#product-icon-connect-SiteMenu-a)"
+                    ></path>
+                    <path
+                      d="M27.53 39.99a13.01 13.01 0 0 0-.5-25.99H16.48A2.48 2.48 0 0 0 14 16.48v10.51a12.99 12.99 0 0 0 13.53 13z"
+                      fill="#0073E6"
+                    ></path>
+                    <path
+                      d="M26 14v9.52A2.48 2.48 0 0 1 23.52 26H14v-9.52A2.48 2.48 0 0 1 16.32 14l.16-.01H26z"
+                      fill="url(#product-icon-connect-SiteMenu-b)"
+                    ></path>
+                    <defs>
+                      <linearGradient
+                        id="product-icon-connect-SiteMenu-a"
+                        x1="13"
+                        y1="1.71"
+                        x2="13"
+                        y2="15.25"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#11EFE3"></stop>
+                        <stop offset=".33" stop-color="#15E8E2"></stop>
+                        <stop offset=".74" stop-color="#1FD3E0"></stop>
+                        <stop offset="1" stop-color="#21CFE0"></stop>
+                      </linearGradient>
+                      <linearGradient
+                        id="product-icon-connect-SiteMenu-b"
+                        x1="20"
+                        y1="15.72"
+                        x2="20"
+                        y2="27.24"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#00299C"></stop>
+                        <stop offset="1" stop-color="#0073E6"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <a href="#">Connect<span>payments for plateforms</span></a>
+                </li>
+                <li>
+                  <svg
+                    class="ProductIcon ProductIcon--Billing"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Billing logo</title>
+                    <path
+                      d="M26 2.46C26 1.1 24.9 0 23.53 0H2.47A2.47 2.47 0 0 0 0 2.46v30.08a2.46 2.46 0 0 0 3.47 2.25l10.2-4.53 10.86-4.83c.9-.4 1.47-1.27 1.47-2.25V2.46z"
+                      fill="url(#product-icon-billing-SiteMenu-a)"
+                    ></path>
+                    <path
+                      d="M26.5 39a13.5 13.5 0 1 0 0-27 13.5 13.5 0 0 0 0 27z"
+                      fill="#00D924"
+                    ></path>
+                    <path
+                      d="M26 12v11.18c0 .98-.57 1.86-1.47 2.25l-10.7 4.76A13.5 13.5 0 0 1 26 12z"
+                      fill="url(#product-icon-billing-SiteMenu-b)"
+                    ></path>
+                    <defs>
+                      <linearGradient
+                        id="product-icon-billing-SiteMenu-a"
+                        x1="13"
+                        y1="6.35"
+                        x2="13"
+                        y2="35.03"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FFD748"></stop>
+                        <stop offset="1" stop-color="#FFC148"></stop>
+                      </linearGradient>
+                      <linearGradient
+                        id="product-icon-billing-SiteMenu-b"
+                        x1="19.5"
+                        y1="12.01"
+                        x2="19.5"
+                        y2="30.19"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#00A600"></stop>
+                        <stop offset="1" stop-color="#00D924"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <a href="#">Billing<span>subscriptions & invoicing</span></a>
+                </li>
+              </ul>
+              <ul class="products_financial">
+                <li>
+                  <svg
+                    class="ProductIcon ProductIcon--Issuing"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Issuing logo</title>
+                    <path
+                      d="M7.62 26.48l-.02-.03a2.44 2.44 0 0 1-.7-1.48 2.49 2.49 0 0 1 .11-1.05c.05-.28.13-.54.24-.77l.08-.17L14.67 10h21.85A2.52 2.52 0 0 1 39 12.37l.01.16v22.92A2.52 2.52 0 0 1 36.67 38l-.16.01H19a2.5 2.5 0 0 0 .64-1.97c-.07-.66-.43-1.09-.95-1.47l-.15-.1-10.62-7.73-.14-.1v-.01l.14.1a2.52 2.52 0 0 1-.27-.21l-.03-.03z"
+                      fill="url(#product-icon-issuing-SiteMenu-a)"
+                    ></path>
+                    <path
+                      d="M22.05 2.1c.7-.15 1.41 0 1.99.41l6.56 4.72a2.5 2.5 0 0 1 .92 2.8V10l-8.5 26-.05.2-.03.08-.03.09-.15.32-.02.04-.19.29-.03.04a2.9 2.9 0 0 1-.23.25l-.03.02a2.24 2.24 0 0 1-.58.4l-.03.03c-.1.05-.2.1-.31.13h-.05l-.33.08h-.05a2.3 2.3 0 0 1-.36.03H3.53A2.53 2.53 0 0 1 1 35.45v-22.9C1 11.14 2.13 10 3.53 10H16.6l3.8-6.7a2.5 2.5 0 0 1 1.46-1.15l.18-.05z"
+                      fill="#0073E6"
+                    ></path>
+                    <path
+                      d="M31.38 10l-8.37 26-.02.1-.02.1-.03.08-.03.09-.07.16-.08.16-.02.04-.1.15-.09.14-.03.04-.11.13-.12.12-.03.02c-.08.09-.17.16-.26.23l-.15.1-.17.08-.03.02-.15.07-.16.06h-.05l-.16.05-.1.01.1-.1c.4-.51.59-1.17.51-1.82-.07-.66-.43-1.09-.95-1.47l-.15-.1-10.62-7.73-.14-.1a2.54 2.54 0 0 1-.26-.26l-.04-.05a2.48 2.48 0 0 1-.12-.14l-.02-.04-.03-.04a2.43 2.43 0 0 1-.17-.3l-.03-.06a2.5 2.5 0 0 1-.15-.42l-.01-.07-.02-.1-.01-.06a2.51 2.51 0 0 1 .05-1.01l.02-.09a2.5 2.5 0 0 1 .04-.1c.03-.25.1-.5.21-.74l.1-.17L16.66 10h14.71z"
+                      fill="url(#product-icon-issuing-SiteMenu-b)"
+                    ></path>
+                    <defs>
+                      <linearGradient
+                        id="product-icon-issuing-SiteMenu-a"
+                        x1="22.92"
+                        y1="11.68"
+                        x2="22.92"
+                        y2="39.68"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset=".1" stop-color="#FF80FF"></stop>
+                        <stop offset=".39" stop-color="#FF7BF9"></stop>
+                        <stop offset=".77" stop-color="#FF6EEA"></stop>
+                        <stop offset="1" stop-color="#FF62DC"></stop>
+                      </linearGradient>
+                      <linearGradient
+                        id="product-icon-issuing-SiteMenu-b"
+                        x1="31.38"
+                        y1="27.93"
+                        x2="11.62"
+                        y2="27.93"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#0073E6"></stop>
+                        <stop offset="1" stop-color="#00299C"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <a href="#">Issuing<span>card creation</span></a>
+                </li>
+              </ul>
+              <ul class="products_business">
+                <li>
+                  <svg
+                    class="ProductIcon ProductIcon--Radar"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Radar logo</title>
+                    <path
+                      d="M24.87 4.46a1.26 1.26 0 0 0-1.8.2l-4.6 5.82L3.42 29.45c.27.22.54.45.78.7a9.42 9.42 0 0 1 1.13 1.32l.1.13a9.15 9.15 0 0 1 .8 1.43c.29.62.5 1.28.65 1.95a2.5 2.5 0 0 0 2.45 1.93H38.7a1.27 1.27 0 0 0 1.27-1.3 42.43 42.43 0 0 0-15.1-31.15z"
+                      fill="#9A66FF"
+                    ></path>
+                    <path
+                      d="M27.8 21.98A33.82 33.82 0 0 0 5.95 4.28a1.29 1.29 0 0 0-1.56.98L.1 25.4a2.54 2.54 0 0 0 1.4 2.88 9.48 9.48 0 0 1 2.72 1.87l.17.17c.35.36.67.74.96 1.15l.1.13a9.15 9.15 0 0 1 .8 1.43l20.94-9.31a1.29 1.29 0 0 0 .62-1.74z"
+                      fill="url(#product-icon-radar-SiteMenu-a)"
+                    ></path>
+                    <path
+                      d="M18.46 10.48l.47.38a33.82 33.82 0 0 1 8.87 11.12 1.29 1.29 0 0 1-.62 1.74L6.25 33.03a9.15 9.15 0 0 0-.8-1.43l-.1-.13-.23-.3c-.23-.3-.47-.58-.74-.85a9.7 9.7 0 0 0-.95-.86l15.03-18.98z"
+                      fill="url(#product-icon-radar-SiteMenu-b)"
+                    ></path>
+                    <defs>
+                      <linearGradient
+                        id="product-icon-radar-SiteMenu-a"
+                        x1="13.98"
+                        y1="4.24"
+                        x2="13.98"
+                        y2="33.03"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset=".26" stop-color="#FF5091"></stop>
+                        <stop offset=".91" stop-color="#E03071"></stop>
+                      </linearGradient>
+                      <linearGradient
+                        id="product-icon-radar-SiteMenu-b"
+                        x1="15.68"
+                        y1="10.48"
+                        x2="15.68"
+                        y2="33.03"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#6E00F5"></stop>
+                        <stop offset="1" stop-color="#9860FE"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <a href="#">Radar<span>Fraud and Risk Management</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Developers</a>
+            <div class="dropdown developers">
+              <ul class="developers__doc">
+                <li><a href="#">Prebuilt Checkout</a></li>
+                <li><a href="#">Accept online payments</a></li>
+                <li><a href="#">Librairies and SDKs</a></li>
+                <li><a href="#">Manage subscriptions</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Send payments</a></li>
+                <li><a href="#">Code samples</a></li>
+                <li><a href="#">Set up in-person payments</a></li>
+              </ul>
+              <ul class="developers__api">
+                <li>
+                  <i class="tiny material-icons">dehaze</i
+                  ><a href="#">Full API reference</a>
+                </li>
+                <li>
+                  <i class="tiny material-icons">track_changes</i
+                  ><a href="#">API status</a>
+                </li>
+                <li>
+                  <i class="tiny material-icons">help_center</i
+                  ><a href="#">Support</a>
+                </li>
+                <li>
+                  <i class="tiny material-icons">analytics</i
+                  ><a href="#">API changelog</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Company</a>
+            <div class="dropdown company">
+              <ul class="company__nav">
+                <li>
+                  <i class="tiny material-icons">attach_money</i>
+                  <a href="#">About Stripe</a>
+                </li>
+                <li>
+                  <i class="tiny material-icons">work</i>
+                  <a href="#">Jobs</a>
+                </li>
+                <li>
+                  <i class="tiny material-icons">business</i
+                  ><a href="#">Customers</a>
+                </li>
+                <li>
+                  <i class="tiny material-icons">insert_drive_file</i
+                  ><a href="#">Newsroom</a>
+                </li>
+                <li>
+                  <i class="tiny material-icons">public</i
+                  ><a href="#">Enterprise</a>
+                </li>
+                <li>
+                  <i class="tiny material-icons">category</i
+                  ><a href="#">Partners</a>
+                </li>
+              </ul>
+
+              <ul class="company__blog">
+                <li>
+                  <i class="tiny material-icons">edit</i>
+                  <a href="#">From the blog</a>
+                </li>
+                <li>
+                  <a href="#">European payment methods available worldwide ></a>
+                </li>
+                <li>
+                  <a href="#">We built Checkout so you don't have to ? ></a>
+                </li>
+                <li>
+                  <a href="#">To design and develop an interactive globe ></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
